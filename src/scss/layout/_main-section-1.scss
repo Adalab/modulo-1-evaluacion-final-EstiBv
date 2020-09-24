@@ -1,0 +1,84 @@
+.Section-1 {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  padding: 30px 15px 45px 15px;
+}
+
+.Section-1__aside--small {
+  display: block;
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  line-height: 30px;
+  color: #8ccbea;
+}
+.Section-1__aside--title {
+  font-family: "RobotoSlab";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: capitalize;
+  display: inline-block;
+  padding-top: 0;
+}
+.Section-1__aside--text {
+  font-family: "Roboto-Regular";
+  font-size: 18px;
+  line-height: 30px;
+  color: #4a4a4a;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+.Section-1__aside--btn {
+  background: #ffffff;
+  width: 76px;
+  height: 45px;
+  border-radius: 22.5px;
+  border-color: #f26002;
+  color: #f26002;
+}
+.Section-1__aside--btn:hover {
+  border: none;
+  background-color: #f26002;
+  color: #ffffff;
+  font-size: 20px;
+  transition: color 1s ease;
+}
+
+@media all and (min-width: 768px) {
+  .Section-1 {
+    padding: 30px 60px 60px 39px;
+  }
+  .Section-1__aside {
+    width: 690px;
+  }
+  .Section-1__aside--title {
+    display: block;
+    width: auto;
+    font-size: 26px;
+    line-height: 45px;
+  }
+  .Section-1__aside--text {
+    padding-top: 30px;
+    font-size: 20px;
+  }
+  .Section-1__aside--btn {
+    width: 91px;
+    height: 45px;
+  }
+}
+@media all and (min-width: 1280px) {
+  .Section-1__aside--title {
+    display: block;
+    width: auto;
+  }
+  .Section-1__aside {
+    width: 730px;
+    margin: 90px 275px 60px 275px;
+  }
+  .Section-1__aside--btn {
+    width: 160px;
+    height: 45px;
+  }
+}
