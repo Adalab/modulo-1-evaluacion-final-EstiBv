@@ -1,1 +1,79 @@
+.Footer {
+  width: 100%;
+  background-color: $colorFooter-backgound;
+  color: $colorFooter-text;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 15px 45px 15px;
+}
+.Footer__btn {
+  width: 45px;
+  height: 45px;
+  background-color: $color-btn-background;
+  border-radius: 100%;
+  background-image: url(../assets/images/ico-menu.svg);
+  background-position: center;
+  position: absolute;
+  top: -25px;
+}
+.Footer-btn--ico {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
 
+.Footer__list-1,
+.Footer__list-2 {
+  padding-bottom: 30px;
+  list-style: none;
+}
+.Footer__list--links {
+  list-style: none;
+  text-decoration-line: none;
+  text-transform: uppercase;
+  color: $colorFooter-text;
+  font-family: $fontFamily-footer;
+  font-size: $fontSize-footer-list;
+  line-height: $fontLineHeigth-Regular;
+}
+.Footer__copy {
+  font-family: $fontFamily-footer;
+  font-size: $fontSize-copy;
+  line-height: $fontLineHeigth-Regular;
+}
+.Footer__copy--emoji {
+  color: $color-btn;
+}
+
+@media all and (min-width: 768px) {
+  .Footer__list {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .Footer__copy,
+  .Footer__list-1,
+  .Footer__list-2 {
+    padding: 0 30px 0 0;
+  }
+  .Footer__copy {
+    order: -1;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .Footer__list {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .Footer__copy,
+  .Footer__list-1,
+  .Footer__list-2 {
+    padding: 0 15px 0 0;
+  }
+  .Footer__copy {
+    order: -1;
+  }
+}
