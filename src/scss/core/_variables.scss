@@ -1,8 +1,20 @@
-// fonts
-// $font-main: "Roboto", sans-serif;
+// fonts (general)
+$font-face: "RobotoSlab";
+$font-size-main: 18px;
+$font-weight: bold;
+$fontLineHeigth-Regular: 30px;
 
-// colors $color
+// colors (generals)
+$color-light: #ffffff;
+$color-light-midtone: #8ccbea;
+$color-midtone: #f26002;
+$color-dark-midtone: #0271bc;
+$color-dark: #304268;
 
+$color-backgroung-Section-2: #eff9ff;
+
+// header
+// main
 // footer
 $colorFooter-backgound: #304268;
 $color-btn-background: #ffffff;
@@ -12,3 +24,5 @@ $fontFamily-footer: "Roboto-Regular";
 $fontSize-footer-list: 16px;
 $fontSize-copy: 14px;
 $fontLineHeigth-Regular: 30px;
+
+// butons
