@@ -3,43 +3,136 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Módulo-1-Evaluación-final-EstiBv</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
   </head>
-
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <header role="Banner" id="Header" class="Header">
+      <nav
+        class="Header__burger"
+        role="Navigation-primary"
+        aria-label="Menu-navigation"
+      >
+        <a href="https://adalab.es/" title="Go-to-menu">
+          <img
+            class="Header__burger--icon"
+            src="/assets/images/ico-menu.svg"
+            alt="Menu"
+            title="Go-to-menu"
+          />
+        </a>
+      </nav>
+      <div class="Claim" aria-label="Slogan">
+        <h1 class="Header__title">Anonymous proxy</h1>
+        <h2 class="Header__subtitle">In hac habitasse platea dictumst.</h2>
+      </div>
+      <a
+        class="Header__scrolldown"
+        aria-label="Go-contentinfo"
+        href="#Footer"
+        title="Go-to-contentinfo"
+      >
+        <img
+          class="Header__scrolldown--icon"
+          src="./assets/images/ico-scroll-down.svg"
+          alt="Scroll-down"
+          title="Go-to-contentinfo"
+        />
+      </a>
+      <!-- </div> -->
+    </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
+    <main role="main">
+      <section class="Section-1">
+        <aside class="Section-1__aside" role="Complementary">
+          <small class="Section-1__aside--small">Insomnia Tips</small>
+          <h3 class="Section-1__aside--title">Looking through a window</h3>
+          <p class="Section-1__aside--text">
+            Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
+            luctus ex diam nec lectus. Vivamus semper sodales rutrum.
+          </p>
+          <button
+            class="Section-1__aside--btn"
+            aria-label="Go-complementary"
+            title="Go-complementary"
+          >
+            Go
+          </button>
+        </aside>
+      </section>
+
+      <section class="Section-2">
+        <div class="Section-2__container">
+          <h3 class="Section-2__container--item1">3 Reason to purchase</h3>
+          <article class="Section-2__container--item2">
+            <h4>Ut sed metus</h4>
+            <p class="Section-2__container--p">
+              Lorem ipsum dolor sit amet, consecteur.
+            </p>
+          </article>
+          <article class="Section-2__container--item3">
+            <h4>Curabitur ac erat</h4>
+            <p class="Section-2__container--p">
+              Mauris mattis urna quis lorem molestie.
+            </p>
+          </article>
+          <article class="Section-2__container--item4">
+            <h4>Morbi dictum</h4>
+            <p class="Section-2__container--p">
+              Aliquam in dolor et dolor tincidunt.
+            </p>
+          </article>
+          <button
+            class="Section-2__container--item5"
+            aria-label="More-reasons"
+            title="More-reason"
+          >
+            More reasons
+          </button>
+        </div>
+      </section>
+
+    </main>
+    <footer role="Contentinfo" id="Footer" class="Footer">
+      <a class="Footer__btn" aria-label="go-menu" href="#Header" title="Go-to-menu">
+        <img class="Footer-btn--ico" src="./assets/images/ico-arrow.svg" alt="Arrow-up" title="Go-to-menu"
+      /></a>
+      <nav class="Footer__list" role="Navigation-secundary">
+        <ul class="Footer__list-1">
+          <li>
+            <a class="Footer__list--links" href="https://adalab.es/" title="Articles">Articles</a>
+          </li>
+          <li>
+            <a class="Footer__list--links" href="https://adalab.es/" title="Books">Books</a>
+          </li>
+          <li>
+            <a class="Footer__list--links" href="https://adalab.es/" title="Events">Events</a>
+          </li>
+          <li>
+            <a class="Footer__list--links" href="https://adalab.es/" title="Reasons">Reasons</a>
+          </li>
+          <li>
+            <a class="Footer__list--links" href="https://adalab.es/" title="Tips">Tips</a>
+          </li>
         </ul>
-      </main>
 
-      <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
-
-      <a class="link__github" href="https://github.com" target="_blank">GitHub</a>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
-
+        <ul class="Footer__list-2">
+          <li><a class="Footer__list--links" href="https://adalab.es/" title="Twitter">Twitter</a></li>
+          <li><a class="Footer__list--links" href="https://adalab.es/" title="Instagram">Instagram</a></li>
+          <li><a class="Footer__list--links" href="https://adalab.es/" title="Mastodon.social">Mastodon.social<a></li>
+        </ul>
+        <div class="Footer__copy">
+        <small class="Footer__copy">
+          @ 2017
+          <p>we <span class="Footer__copy--emoji">❤</span> components</p>
         </small>
-      </footer>
+      </div>
+      </nav>
+    </footer>
 
-    </div>
-    <script src="./assets/js/main.js"></script>
   </body>
 </html>
