@@ -27,6 +27,7 @@
 .Header__burger--ico {
   width: auto;
   padding: 15px 14px 15px 14px;
+  transform: scale(-10);
 }
 
 .Claim {
@@ -34,18 +35,16 @@
   padding: 0 15px 0 15px;
 }
 .Header__title {
-  width: 290px;
-  font-family: $font-face;
-  font-weight: $font-weight;
-  color: $color-light;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  color: $font-color-light;
   text-transform: uppercase;
   font-size: 42px;
   padding: 0 15px 10px 15px;
   line-height: 55px;
 }
 .Header__subtitle {
-  width: 290px;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", serif;
   font-size: 16px;
   text-align: center;
   color: $color-light;

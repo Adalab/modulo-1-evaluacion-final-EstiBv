@@ -1,7 +1,7 @@
 .Section-2 {
   width: 100%;
   height: auto;
-  font-family: "RobotoSlab";
+  font-family: "Roboto Slab", serif;
   font-weight: bold;
   color: $font-color-dark;
 }
@@ -17,7 +17,7 @@
   text-align: center;
 }
 .Section-2__container--p {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", serif;
   font-size: 18px;
   line-height: 30px;
   grid-gap: 60px;
@@ -27,7 +27,7 @@
   font-size: 24px;
   text-transform: capitalize;
   line-height: 30px;
-  font-family: "RobotoSlab";
+  font-family: "Roboto Slab", serif;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -50,7 +50,7 @@
   border-radius: 22.5px;
   border-color: transparent;
   background-color: $color-midtone;
-  font-family: "Roboto-Medium";
+  font-family: "Roboto-Medium", serif;
   font-size: 20px;
   line-height: 45px;
   color: $color-light;
@@ -84,8 +84,6 @@
   .Section-2__container--item5 {
     font-size: 26px;
     line-height: 45px;
-    // position: relative;
-    // left: 6.5%;
   }
 }
 
@@ -97,7 +95,5 @@
     height: 45px;
     font-size: 26px;
     line-height: 45px;
-    // position: relative;
-    // left: 25%;
   }
 }

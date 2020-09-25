@@ -32,14 +32,14 @@
   text-decoration-line: none;
   text-transform: uppercase;
   color: $color-light;
-  font-family: $fontFamily-footer;
-  font-size: $fontSize-footer-list;
-  line-height: $fontLineHeigth-Regular;
+  font-family: "Roboto-Regular", serif;
+  font-size: 16px;
+  line-height: 30px;
 }
 .Footer__copy {
-  font-family: $fontFamily-footer;
-  font-size: $fontSize-copy;
-  line-height: $fontLineHeigth-Regular;
+  font-family: "Roboto-Regular", serif;
+  font-size: 14px;
+  line-height: 30px;
 }
 .Footer__copy--emoji {
   color: $color-midtone;
