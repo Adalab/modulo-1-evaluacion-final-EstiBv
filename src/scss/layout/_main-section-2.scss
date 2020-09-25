@@ -9,7 +9,7 @@
   padding: 30px 15px 60px 15px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 60px;
   background-color: $color-background-main;
   font-size: 18px;
@@ -42,7 +42,7 @@
 .Section-2__container--item4 {
   grid-column-start: 2;
 }
-.Section-2__container--item5 {
+.Section-2__btn {
   grid-column-start: 2;
   grid-auto-flow: row;
   width: 184px;
@@ -53,13 +53,31 @@
   font-family: "Roboto-Medium", serif;
   font-size: 20px;
   line-height: 45px;
+  text-align: center;
   color: $color-light;
+  animation-name: morereasons;
+  animation-delay: 0.2s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes morereasons {
+  0% {
+    color: $color-midtone;
+    background-color: $color-light;
+  }
+  50% {
+    color: $color-light;
+    background-color: $color-midtone;
+  }
+  100% {
+    color: $color-midtone;
+    background-color: $color-light;
+  }
 }
 
 @media all and (min-width: 768px) {
   .Section-2 {
-    width: 100%;
-    height: auto;
+    // width: 100%;
     grid-auto-flow: row;
   }
   .Section-2__container--item1 {
@@ -81,19 +99,21 @@
     line-height: 45px;
     grid-area: 2;
   }
-  .Section-2__container--item5 {
-    font-size: 26px;
-    line-height: 45px;
+  .Section-2__btn {
+    transform: translateX(12px);
   }
 }
 
-// meter media 1280
-
 @media all and (min-width: 1280px) {
-  .Section-2__container--item5 {
+  .Section-2__container--item1 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .Section-2__btn {
     width: 255px;
     height: 45px;
     font-size: 26px;
     line-height: 45px;
+    transform: translateX(60px);
   }
 }
