@@ -3,7 +3,7 @@
   height: auto;
   font-family: "RobotoSlab";
   font-weight: bold;
-  color: #000000;
+  color: $font-color-dark;
 }
 .Section-2__container {
   padding: 30px 15px 60px 15px;
@@ -11,7 +11,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 60px;
-  background-color: #eff9ff;
+  background-color: $color-background-main;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -49,11 +49,11 @@
   height: 45px;
   border-radius: 22.5px;
   border-color: transparent;
-  background-color: #f26002;
+  background-color: $color-midtone;
   font-family: "Roboto-Medium";
   font-size: 20px;
   line-height: 45px;
-  color: #ffffff;
+  color: $color-light;
 }
 
 @media all and (min-width: 768px) {

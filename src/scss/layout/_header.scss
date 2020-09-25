@@ -9,12 +9,11 @@
   background-position: center;
   background-size: cover;
 }
-// así funciona en chrome, no en github:
-//  background-image: url(/assets/images/cover.jpg);
+
 .Header__burger {
   width: 44px;
   height: 44px;
-  background-color: #0271bc;
+  background-color: $color-dark-midtone;
   z-index: 1;
   align-self: flex-start;
   position: fixed;
@@ -24,8 +23,8 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-// así me lo reconoce chrome, no github: background-image: url(../assets/images/ico-scroll-down.svg)
-.Header__burger--icon {
+
+.Header__burger--ico {
   width: auto;
   padding: 15px 14px 15px 14px;
 }
@@ -38,7 +37,7 @@
   width: 290px;
   font-family: $font-face;
   font-weight: $font-weight;
-  color: white;
+  color: $color-light;
   text-transform: uppercase;
   font-size: 42px;
   padding: 0 15px 10px 15px;
@@ -49,22 +48,21 @@
   font-family: "Roboto-Regular";
   font-size: 16px;
   text-align: center;
-  color: white;
+  color: $color-light;
   padding: 0 15px 0 15px;
   align-content: flex-end;
 }
 
-.Header__scrolldown {
-  height: 45px;
+.Header__btn--scroll {
   width: 45px;
-  border-radius: 100%;
-  background-color: #ffffff;
-  margin: 45px 137px 53px 137px;
+  height: 45px;
+  border-radius: 22.5px;
+  background-color: $color-light;
   background-image: url(../images/ico-scroll-down.svg);
-}
-
-.Header__scrolldown--icon {
-  width: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // width: auto;
   padding: 18px 12px 15.3px 13px;
 }
 
