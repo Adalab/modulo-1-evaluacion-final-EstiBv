@@ -18,16 +18,16 @@
   align-self: flex-start;
   position: fixed;
   top: 0;
-  background-image: url(../images/ico-menu.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  // background-image: url(../images/ico-menu.svg);
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
 }
 
-.Header__burger--ico {
+.Header__burger--icon {
   width: auto;
   padding: 15px 14px 15px 14px;
-  transform: scale(-10);
 }
 
 .Claim {
@@ -57,11 +57,13 @@
   height: 45px;
   border-radius: 22.5px;
   background-color: $color-light;
-  background-image: url(../images/ico-scroll-down.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  // width: auto;
+  // background-image: url(../images/ico-scroll-down.svg);
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+}
+.Header__scrolldown--icon {
+  width: auto;
   padding: 18px 12px 15.3px 13px;
 }
 
