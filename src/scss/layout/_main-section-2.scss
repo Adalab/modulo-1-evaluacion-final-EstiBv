@@ -1,56 +1,47 @@
 .Section-2 {
-  width: 100%;
+  width: 100vw;
   height: auto;
   font-family: "Roboto Slab", serif;
   font-weight: bold;
   color: $font-color-dark;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
 }
 .Section-2__container {
   padding: 30px 15px 60px 15px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 60px;
+  grid-template-rows: 93px 93px 93px 93px 93px;
   background-color: $color-background-main;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
 }
 .Section-2__container--p {
-  font-family: "Roboto-Regular", serif;
-  font-size: 18px;
-  line-height: 30px;
-  grid-gap: 60px;
+  font-weight: normal;
 }
 .Section-2__container--item1 {
   grid-column-start: span 3;
   font-size: 24px;
   text-transform: capitalize;
-  line-height: 30px;
   font-family: "Roboto Slab", serif;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .Section-2__container--item2 {
-  grid-column-start: 2;
+  grid-column-start: span 3;
 }
 .Section-2__container--item3 {
-  grid-column-start: 2;
+  grid-column-start: span 3;
 }
 .Section-2__container--item4 {
-  grid-column-start: 2;
+  grid-column-start: span 3;
 }
 .Section-2__btn {
-  grid-column-start: 2;
   grid-auto-flow: row;
   width: 184px;
   height: 45px;
   border-radius: 22.5px;
   border-color: transparent;
   background-color: $color-midtone;
-  font-family: "Roboto-Medium", serif;
+  font-family: "Roboto Slab", serif;
+  font-weight: Medium;
   font-size: 20px;
   line-height: 45px;
   text-align: center;
@@ -60,6 +51,7 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
+
 @keyframes morereasons {
   0% {
     color: $color-midtone;
@@ -75,45 +67,59 @@
   }
 }
 
+.Section-2__btn:hover {
+  border-radius: 1px $font-color-medium solid;
+  box-shadow: 2px 2px 2px 2px $font-color-medium;
+  transition: box-shadow 1s ease 0.1s;
+}
+
 @media all and (min-width: 768px) {
   .Section-2 {
-    // width: 100%;
     grid-auto-flow: row;
+  }
+  .Section-2__container {
+    font-size: 24px;
+    line-height: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 112px 112px 112px;
+  }
+  .Section-2__container--p {
+    font-size: 20px;
   }
   .Section-2__container--item1 {
     font-size: 26px;
     line-height: 45px;
   }
   .Section-2__container--item2 {
-    font-size: 26px;
-    line-height: 45px;
     grid-area: 2;
   }
   .Section-2__container--item3 {
-    font-size: 26px;
-    line-height: 45px;
     grid-area: 2;
   }
   .Section-2__container--item4 {
-    font-size: 26px;
-    line-height: 45px;
     grid-area: 2;
   }
   .Section-2__btn {
-    transform: translateX(12px);
+    grid-area: span 3;
   }
 }
 
 @media all and (min-width: 1280px) {
+  .Section-2__container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 112px 112px 112px;
+  }
   .Section-2__container--item1 {
     font-size: 32px;
     line-height: 45px;
+  }
+  .Section-2__container--p {
+    font-size: 20px;
   }
   .Section-2__btn {
     width: 255px;
     height: 45px;
     font-size: 26px;
     line-height: 45px;
-    transform: translateX(60px);
   }
 }

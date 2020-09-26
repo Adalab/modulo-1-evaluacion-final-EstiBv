@@ -1,5 +1,5 @@
 .Section-1 {
-  width: 100%;
+  width: 100vw;
   height: auto;
   background-color: $color-light;
   padding: 30px 15px 45px 15px;
@@ -7,7 +7,8 @@
 
 .Section-1__aside--small {
   display: block;
-  font-family: "Roboto-Regular", serif;
+  font-family: "Roboto Slab", serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   color: $color-light-midtone;
@@ -23,7 +24,8 @@
   padding-top: 0;
 }
 .Section-1__aside--text {
-  font-family: "Roboto-Regular", serif;
+  font-family: "Roboto Slab", serif;
+  font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   color: #4a4a4a;
@@ -36,7 +38,14 @@
   height: 45px;
   border-radius: 22.5px;
   border: 2px $color-midtone solid;
-  // border-color: #f26002;
+  font-family: "Roboto Slab", serif;
+  font-weight: medium;
+  font-size: 20px;
+  line-height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: $color-midtone;
   transition: color 1s ease;
 }
@@ -44,12 +53,12 @@
   border: none;
   background-color: $color-midtone;
   color: $color-light;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 @media all and (min-width: 768px) {
   .Section-1 {
-    width: 100%;
+    // width: 100%;
     padding: 30px 60px 60px 39px;
   }
   .Section-1__aside {
@@ -72,7 +81,7 @@
 }
 @media all and (min-width: 1280px) {
   .Section-1 {
-    width: 100%;
+    // width: 100%;
   }
   .Section-1__aside--title {
     display: block;

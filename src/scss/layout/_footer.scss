@@ -1,8 +1,9 @@
 .Footer {
-  width: 100%;
+  width: 100vw;
   background-color: $color-dark;
   color: $font-color-light;
   position: relative;
+  font-family: "Roboto Slab", serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,6 +17,12 @@
   border-radius: 22.5px;
   position: absolute;
   top: -22px;
+  transition: ease 0.4s;
+  animation-name: bnt-arrow;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 3;
   // background-image: url(../images/ico-arrow.svg);
   // background-position: center;
   // background-size: cover;
@@ -23,10 +30,40 @@
   // position: absolute;
   // top: -25px;
 }
+@keyframes bnt-arrow {
+  0% {
+    transform: translateY(1px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    // transition: ease;
+    transform: translateY(0px);
+  }
+}
 
 .Footer-__btn--ico {
   width: auto;
-  padding: 11px 12.4px 10px 12px;
+  padding: 11px 12px 10px 12px;
+  animation-name: arrow;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 3;
+}
+
+@keyframes arrow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .Footer__list-1,
@@ -39,12 +76,14 @@
   text-decoration-line: none;
   text-transform: uppercase;
   color: $color-light;
-  font-family: "Roboto-Regular", serif;
+  font-family: "Roboto Slab", serif;
+  font-weight: normal;
   font-size: 16px;
   line-height: 30px;
 }
 .Footer__copy {
-  font-family: "Roboto-Regular", serif;
+  font-family: "Roboto Slab", serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 30px;
 }

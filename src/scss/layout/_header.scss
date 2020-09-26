@@ -1,13 +1,15 @@
 .Header {
   height: 100vh;
+  width: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
   background-image: url(../images/cover.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .Header__burger {
@@ -18,11 +20,6 @@
   align-self: flex-start;
   position: fixed;
   top: 0;
-
-  // background-image: url(../images/ico-menu.svg);
-  // background-position: center;
-  // background-size: cover;
-  // background-repeat: no-repeat;
 }
 
 .Header__burger--icon {
@@ -30,21 +27,18 @@
   padding: 15px 14px 15px 14px;
 }
 
-.Claim {
-  margin-top: 284px;
-  padding: 0 15px 0 15px;
-}
 .Header__title {
+  width: 290px;
   font-family: "Roboto Slab", serif;
   font-weight: bold;
   color: $font-color-light;
   text-transform: uppercase;
   font-size: 42px;
-  padding: 0 15px 10px 15px;
   line-height: 55px;
 }
 .Header__subtitle {
-  font-family: "Roboto-Regular", serif;
+  font-family: "Roboto Slab", serif;
+  font-weight: normal;
   font-size: 16px;
   text-align: center;
   color: $color-light;
@@ -56,29 +50,17 @@
   width: 45px;
   height: 45px;
   border-radius: 22.5px;
+  padding: 14px 12px 12px 12px;
   background-color: $color-light;
-  // background-image: url(../images/ico-scroll-down.svg);
-  // background-position: center;
-  // background-size: cover;
-  // background-repeat: no-repeat;
+  align-self: center;
+  margin-top: 45px;
+  margin-bottom: 53px;
 }
 .Header__scrolldown--icon {
   width: auto;
-  padding: 18px 12px 15.3px 13px;
 }
 
 @media all and (min-width: 768px) {
-  .Claim {
-    width: 100%;
-    height: 100vh;
-    margin-top: 384px;
-    padding: 0 15px 0 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
   .Header__title {
     width: 690px;
     font-size: 80px;
@@ -91,17 +73,6 @@
 }
 
 @media all and (min-width: 1280px) {
-  .Claim {
-    width: 100%;
-    height: 100vh;
-    margin-top: 384px;
-    padding: 0 15px 0 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
   .Header__title {
     width: 730px;
     font-size: 100px;
