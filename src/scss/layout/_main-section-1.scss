@@ -1,21 +1,21 @@
 .Section-1 {
   width: 100vw;
   height: auto;
-  background-color: $color-light;
+  background-color: $color-background-main-section-1;
   padding: 30px 15px 45px 15px;
 }
 
 .Section-1__aside--small {
   display: block;
-  font-family: "Roboto Slab", serif;
-  font-weight: normal;
+  font-family: $font-face;
+  font-weight: $font-regular;
   font-size: 14px;
   line-height: 30px;
-  color: $color-light-midtone;
+  color: $font-color-medium-ligth;
 }
 .Section-1__aside--title {
-  font-family: "Roboto Slab", serif;
-  font-weight: bold;
+  font-family: $font-face;
+  font-weight: $font-bold;
   font-size: 24px;
   line-height: 30px;
   color: $font-color-dark;
@@ -24,11 +24,11 @@
   padding-top: 0;
 }
 .Section-1__aside--text {
-  font-family: "Roboto Slab", serif;
-  font-weight: normal;
+  font-family: $font-face;
+  font-weight: $font-regular;
   font-size: 18px;
   line-height: 30px;
-  color: #4a4a4a;
+  color: $font-color-medium;
   padding-top: 15px;
   padding-bottom: 30px;
 }
@@ -38,8 +38,8 @@
   height: 45px;
   border-radius: 22.5px;
   border: 2px $color-midtone solid;
-  font-family: "Roboto Slab", serif;
-  font-weight: medium;
+  font-family: $font-face;
+  font-weight: $font-medium;
   font-size: 20px;
   line-height: 45px;
   display: flex;

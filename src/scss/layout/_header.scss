@@ -29,19 +29,19 @@
 
 .Header__title {
   width: 290px;
-  font-family: "Roboto Slab", serif;
-  font-weight: bold;
+  font-family: $font-face;
+  font-weight: $font-bold;
   color: $font-color-light;
   text-transform: uppercase;
   font-size: 42px;
   line-height: 55px;
 }
 .Header__subtitle {
-  font-family: "Roboto Slab", serif;
-  font-weight: normal;
+  font-family: $font-face;
+  font-weight: $font-regular;
   font-size: 16px;
   text-align: center;
-  color: $color-light;
+  color: $font-color-light;
   padding: 0 15px 0 15px;
   align-content: flex-end;
 }
@@ -81,6 +81,5 @@
   .Header__subtitle {
     width: 730px;
     font-size: 24px;
-    line-height: normal;
   }
 }

@@ -1,8 +1,8 @@
 .Section-2 {
   width: 100vw;
   height: auto;
-  font-family: "Roboto Slab", serif;
-  font-weight: bold;
+  font-family: $font-face;
+  font-weight: $font-bold;
   color: $font-color-dark;
   font-size: 18px;
   line-height: 30px;
@@ -12,17 +12,17 @@
   padding: 30px 15px 60px 15px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: $color-background-main;
+  background-color: $color-background-main-section-2;
   grid-row-gap: 45px;
 }
 .Section-2__container--p {
-  font-weight: normal;
+  font-weight: $font-regular;
 }
 .Section-2__container--item1 {
   grid-column-start: span 3;
   font-size: 24px;
   text-transform: capitalize;
-  font-family: "Roboto Slab", serif;
+  font-family: $font-face;
 }
 .Section-2__container--item2 {
   grid-column-start: 2;
@@ -43,12 +43,12 @@
   border-radius: 22.5px;
   border-color: transparent;
   background-color: $color-midtone;
-  font-family: "Roboto Slab", serif;
-  font-weight: Medium;
+  font-family: $font-face;
+  font-weight: $font-medium;
   font-size: 20px;
   line-height: 45px;
   text-align: center;
-  color: $color-light;
+  color: $font-color-light;
   animation-name: morereasons;
   animation-delay: 0.2s;
   animation-duration: 3s;
@@ -61,11 +61,11 @@
     background-color: $color-light;
   }
   50% {
-    color: $color-light;
+    color: $font-color-light;
     background-color: $color-midtone;
   }
   100% {
-    color: $color-midtone;
+    color: $font-color-midtone;
     background-color: $color-light;
   }
 }

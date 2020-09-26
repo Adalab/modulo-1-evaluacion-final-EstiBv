@@ -1,6 +1,6 @@
 .Footer {
   width: 100vw;
-  background-color: $color-dark;
+  background-color: $color-background-footer;
   color: $font-color-light;
   display: flex;
   flex-direction: column;
@@ -10,8 +10,8 @@
   text-align: center;
 }
 .Footer__list {
-  font-family: "Roboto Slab", serif;
-  font-weight: normal;
+  font-family: $font-face;
+  font-weight: $font-regular;
 }
 .Footer__btn {
   width: 45px;
@@ -83,19 +83,19 @@
   color: $color-light;
   font-size: 16px;
   line-height: 30px;
-  font-family: "Roboto-Regular", serif;
+  font-family: "Roboto-regular", serif;
   font-weight: normal;
 }
 .Footer__list--links:hover {
   color: $color-midtone;
 }
-// Problema reconocimeinto de: Font-family: 'Roboto Slab', serif.
-// Error consola con visualización: Font-family: 'Roboto-Regular', serif.
+// Problema con reconocimiento en Chorme de: Font-family: 'Roboto Slab', serif.
+// No añadida variable. Error consola: Font-family: 'Roboto-Regular', serif.
 
-.Footer__list-3 {
+.Footer__list-3--copy {
   font-size: 14px;
   line-height: 30px;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto-regular", serif;
   font-weight: normal;
 }
 .Footer__list-3--emoji {
@@ -113,10 +113,10 @@
     justify-content: space-around;
   }
   .Footer__list-1 {
-    padding-left: 40px;
+    padding-left: 80px;
   }
   .Footer__list-2 {
-    padding-left: 40px;
+    padding-left: 80px;
     order: -3;
   }
 }
