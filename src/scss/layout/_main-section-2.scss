@@ -12,8 +12,8 @@
   padding: 30px 15px 60px 15px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 93px 93px 93px 93px 93px;
   background-color: $color-background-main;
+  grid-row-gap: 45px;
 }
 .Section-2__container--p {
   font-weight: normal;
@@ -25,12 +25,15 @@
   font-family: "Roboto Slab", serif;
 }
 .Section-2__container--item2 {
-  grid-column-start: span 3;
+  grid-column-start: 2;
 }
 .Section-2__container--item3 {
-  grid-column-start: span 3;
+  grid-column-start: 2;
 }
 .Section-2__container--item4 {
+  grid-column-start: 2;
+}
+.Section-2__container--item5 {
   grid-column-start: span 3;
 }
 .Section-2__btn {
@@ -69,7 +72,8 @@
 
 .Section-2__btn:hover {
   border-radius: 1px $font-color-medium solid;
-  box-shadow: 2px 2px 2px 2px $font-color-medium;
+  box-shadow: 0px 2px 0px 2px $color-dark;
+  opacity: 50%;
   transition: box-shadow 1s ease 0.1s;
 }
 
@@ -80,8 +84,6 @@
   .Section-2__container {
     font-size: 24px;
     line-height: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 112px 112px 112px;
   }
   .Section-2__container--p {
     font-size: 20px;
@@ -99,16 +101,12 @@
   .Section-2__container--item4 {
     grid-area: 2;
   }
-  .Section-2__btn {
-    grid-area: span 3;
+  .Section-2__container--item5 {
+    grid-column-start: span 3;
   }
 }
 
 @media all and (min-width: 1280px) {
-  .Section-2__container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 112px 112px 112px;
-  }
   .Section-2__container--item1 {
     font-size: 32px;
     line-height: 45px;

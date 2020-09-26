@@ -2,44 +2,41 @@
   width: 100vw;
   background-color: $color-dark;
   color: $font-color-light;
-  position: relative;
-  font-family: "Roboto Slab", serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 45px 15px 45px 15px;
+  text-align: center;
+}
+.Footer__list {
+  font-family: "Roboto Slab", serif;
+  font-weight: normal;
 }
 .Footer__btn {
   width: 45px;
   height: 45px;
   background-color: $color-light;
   border-radius: 22.5px;
-  position: absolute;
-  top: -22px;
+  align-self: center;
+  position: static;
+  transform: translateY(-70px);
   transition: ease 0.4s;
   animation-name: bnt-arrow;
   animation-delay: 1s;
   animation-duration: 3s;
   animation-timing-function: ease;
   animation-iteration-count: 3;
-  // background-image: url(../images/ico-arrow.svg);
-  // background-position: center;
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // position: absolute;
-  // top: -25px;
 }
 @keyframes bnt-arrow {
   0% {
-    transform: translateY(1px);
+    transform: translateY(-71px);
   }
   50% {
-    transform: translateY(20px);
+    transform: translateY(-73px);
   }
   100% {
-    // transition: ease;
-    transform: translateY(0px);
+    transform: translateY(-70px);
   }
 }
 
@@ -66,8 +63,16 @@
   }
 }
 
+.Footer__btn:hover {
+  background-color: $color-dark;
+  transition-property: color;
+  transition-delay: 0.2s;
+  transition-timing-function: ease;
+}
+
 .Footer__list-1,
-.Footer__list-2 {
+.Footer__list-2,
+.Footer__list-3 {
   padding-bottom: 30px;
   list-style: none;
 }
@@ -76,33 +81,42 @@
   text-decoration-line: none;
   text-transform: uppercase;
   color: $color-light;
-  font-family: "Roboto Slab", serif;
-  font-weight: normal;
   font-size: 16px;
   line-height: 30px;
-}
-.Footer__copy {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto-Regular", serif;
   font-weight: normal;
+}
+.Footer__list--links:hover {
+  color: $color-midtone;
+}
+// Problema reconocimeinto de: Font-family: 'Roboto Slab', serif.
+// Error consola con visualización: Font-family: 'Roboto-Regular', serif.
+
+.Footer__list-3 {
   font-size: 14px;
   line-height: 30px;
+  font-family: "Roboto Slab", serif;
+  font-weight: normal;
 }
-.Footer__copy--emoji {
+.Footer__list-3--emoji {
   color: $color-midtone;
 }
 
 @media all and (min-width: 768px) {
+  .Footer__btn {
+    align-self: center;
+  }
   .Footer__list {
+    text-align: start;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-around;
   }
-  .Footer__copy,
-  .Footer__list-1,
+  .Footer__list-1 {
+    padding-left: 40px;
+  }
   .Footer__list-2 {
-    padding: 0 30px 0 0;
-  }
-  .Footer__copy {
-    order: -1;
+    padding-left: 40px;
   }
 }
 
@@ -110,13 +124,5 @@
   .Footer__list {
     display: flex;
     flex-direction: row-reverse;
-  }
-  .Footer__copy,
-  .Footer__list-1,
-  .Footer__list-2 {
-    padding: 0 15px 0 0;
-  }
-  .Footer__copy {
-    order: -1;
   }
 }
