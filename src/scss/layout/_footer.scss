@@ -83,20 +83,19 @@
   color: $color-light;
   font-size: 16px;
   line-height: 30px;
-  font-family: "Roboto-regular", serif;
-  font-weight: normal;
+  font-family: $font-face;
+  font-weight: $font-regular;
 }
 .Footer__list--links:hover {
   color: $color-midtone;
 }
-// Problema con reconocimiento en Chorme de: Font-family: 'Roboto Slab', serif.
-// No añadida variable. Error consola: Font-family: 'Roboto-Regular', serif.
+// Problema en footer con reconocimiento de: Font-family: 'Roboto Slab', serif.
 
 .Footer__list-3--copy {
   font-size: 14px;
   line-height: 30px;
-  font-family: "Roboto-regular", serif;
-  font-weight: normal;
+  font-family: $font-face;
+  font-weight: $font-regular;
 }
 .Footer__list-3--emoji {
   color: $color-midtone;
