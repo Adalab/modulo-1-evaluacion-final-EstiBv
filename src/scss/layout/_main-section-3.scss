@@ -1,0 +1,36 @@
+.new-section {
+  width: 100%;
+  background-color: $color-midtone;
+}
+.new-section__article {
+  //   background-color: $color-midtone;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.new-section__title,
+.new-section__link {
+  color: $font-color-light;
+}
+
+@media all and (min-width: 768px) {
+  .new-section {
+    padding: 0 20px 0 20px;
+  }
+  .new-section__article {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .new-section {
+    background-color: $color-background-footer;
+  }
+}
+@media all and (min-width: 1280px) {
+  .new-section {
+    background-color: $color-background-footer;
+  }
+  //   .new-section__article {
+  //     background-color: $color-background-footer;
+  //   }
+}
